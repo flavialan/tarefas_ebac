@@ -1,0 +1,68 @@
+@use 'variables';
+
+.information{
+    min-height: 400px;
+
+    &--date{
+        background-image: linear-gradient(variables.$blue, transparent);
+    }
+
+    &--gift{
+        background-image: linear-gradient(transparent, variables.$blue);
+    }
+
+    &__title{
+        font-size: 32px;
+        color: variables.$secondaryColor;
+        border-bottom: 4px solid variables.$secondaryColor;
+        padding-top: 24px;
+
+        &--text-left{
+            text-align: right;
+    }
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 16px;
+
+        &--image-left{
+                flex-direction: row-reverse;
+        }
+
+        &__information{
+            color: variables.$primaryColor;
+            font-weight: normal;
+            font-size: 20px;
+            margin-bottom: 16px;
+
+            &__link{
+                button{
+                    background-color: variables.$secondaryColor;
+                    padding: 8px;
+                    width: 100%;
+                    margin-top: 16px;
+                    color: variables.$primaryColor;
+                    font-weight: normal;
+                    font-size: 20px;
+                    border-radius: 25px;
+                    border: variables.$secondaryColor;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: variables.$primaryColor;
+                        color: variables.$secondaryColor;
+                        transition: .8s ease;
+                    }
+                }
+            }
+        }
+    
+        &__image{
+            width: 350px;
+            border-radius: 25px;
+        }
+    }
+}

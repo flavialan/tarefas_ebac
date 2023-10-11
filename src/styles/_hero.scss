@@ -1,0 +1,45 @@
+@use 'variables';
+
+.hero{
+    background-image: url(../images/flower-4210320_1280.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: block;
+
+    
+    .container{
+        width: 100%;
+        min-height: 360px;
+        align-items: center;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        margin-left: 400px;
+        align-items: center;
+
+
+        &__title{
+            font-size: 50px;
+            color: variables.$primaryColor;
+            font-weight: normal;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+    
+        &__text{
+            font-size: 36px;
+            color: variables.$secondaryColor;
+            padding-bottom: 36px;
+
+            #counter{
+                border: 2px solid variables.$primaryColor;
+                padding: 16px;
+                border-radius: 16px;
+            }
+        }
+    
+    }
+}

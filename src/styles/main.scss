@@ -1,0 +1,21 @@
+@use 'hero';
+@use 'variables';
+@use 'date';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pacifico', cursive;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body{
+    background-color: variables.$backgroundColor;
+    overflow-x: hidden;
+}
